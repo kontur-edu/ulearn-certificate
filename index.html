@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Сертификат по курсу «%course.title%»</title>
+    <meta name="viewport" content="width=1280" />
+    <meta name="og:title" content="%user.name% прошёл курс «%course.title%»" />
+    <meta
+      name="og:description"
+      content="%user.name|in_quotes% прошёл курс «%course.title|in_quotes%» на платформе ulearn.me и получил оценку %mark_description|in_quotes%"
+    />
+    <meta name="og:image" content="images/skbkontur-logo.png" />
+    <meta
+      name="description"
+      content="%user.name|in_quotes% прошёл курс «%course.title|in_quotes%» на платформе ulearn.me и получил оценку %mark_description|in_quotes%"
+    />
+    <meta name="image" content="images/skbkontur-logo.png" />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/likely.css" />
+    <link rel="stylesheet" href="styles/tlite.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header row">
+        <div class="left logo-wrapper">
+          <img src="images/skbkontur-logo.png" />
+        </div>
+        <h1 class="right title-wrapper">
+          <div class="title">
+            Сертификат
+          </div>
+          <div class="subtitle">
+            о прохождении курса
+          </div>
+        </h1>
+      </header>
+
+      <div class="content row">
+        <div class="left content-left-wrapper">
+          <div class="user-name-wrapper">
+            <h2 class="user-name">%user.name%</h2>
+          </div>
+        </div>
+        <div class="right content-right-wrapper">
+          <h2 class="course-title">
+            <a
+              target="_blank"
+              href="https://ulearn.me/Course/%course.id|in_quotes%"
+              >%course.title%</a
+            >
+          </h2>
+          <h3 class="mark-description">
+            %mark_description%
+          </h3>
+          <div class="results-wrapper">
+            <div class="mark-ring-wrapper mark-ring-%ring_color|in_quotes%">
+              <div class="mark-value">
+                %mark_value%<span class="mark-percent">%</span>
+              </div>
+            </div>
+            <div class="results">
+              <p
+                class="important-result hidden"
+                data-show-when-has-content="%important_result|in_quotes%"
+              >
+                %important_result%
+              </p>
+              <ul>
+                <li
+                  class="result hidden"
+                  data-show-when-has-content="%result1|in_quotes%"
+                >
+                  %result1%
+                </li>
+                <li
+                  class="result hidden"
+                  data-show-when-has-content="%result2|in_quotes%"
+                >
+                  %result2%
+                </li>
+                <li
+                  class="result hidden"
+                  data-show-when-has-content="%result3|in_quotes%"
+                >
+                  %result3%
+                </li>
+                <li
+                  class="result hidden"
+                  data-show-when-has-content="%result4|in_quotes%"
+                >
+                  %result4%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer row">
+        <div class="left meta-wrapper">
+          <time class="date">%date%</time>
+
+          <div class="certificate-link-wrapper">
+            <a
+              target="_blank"
+              href="%certificate.url|in_quotes%"
+              class="link-to-copy"
+              data-tlite="Ссылка на сертификат скопирована в буфер обмена"
+              data-clipboard-text="%certificate.url|in_quotes%"
+              >Скопировать ссылку для резюме</a
+            >
+          </div>
+
+          <div class="likely-wrapper">
+            <div class="likely">
+              <div class="vkontakte">Рассказать друзьям</div>
+              <div class="telegram"></div>
+              <div class="twitter"></div>
+              <div class="facebook"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right instructors-wrapper">
+          <div
+            class="instructor-wrapper hidden"
+            data-show-when-has-content="%instructor1_role|in_quotes%"
+          >
+            <p class="instructor-role">%instructor1_role%</p>
+            <p
+              class="instructor-name hidden"
+              data-show-when-no-content="%instructor1_link|in_quotes%"
+            >
+              %instructor1_name%
+            </p>
+            <p
+              class="instructor-name hidden"
+              data-show-when-has-content="%instructor1_link|in_quotes%"
+            >
+              <a target="_blank" href="%instructor1_link|in_quotes%"
+                >%instructor1_name%</a
+              >
+            </p>
+          </div>
+          <div
+            class="instructor-wrapper hidden"
+            data-show-when-has-content="%instructor2_role|in_quotes%"
+          >
+            <p class="instructor-role">%instructor2_role%</p>
+            <p
+              class="instructor-name hidden"
+              data-show-when-no-content="%instructor2_link|in_quotes%"
+            >
+              %instructor2_name%
+            </p>
+            <p
+              class="instructor-name hidden"
+              data-show-when-has-content="%instructor2_link|in_quotes%"
+            >
+              <a target="_blank" href="%instructor2_link|in_quotes%"
+                >%instructor2_name%</a
+              >
+            </p>
+          </div>
+          <div
+            class="instructor-wrapper hidden"
+            data-show-when-has-content="%instructor3_role|in_quotes%"
+          >
+            <p class="instructor-role">%instructor3_role%</p>
+            <p
+              class="instructor-name hidden"
+              data-show-when-no-content="%instructor3_link|in_quotes%"
+            >
+              %instructor3_name%
+            </p>
+            <p
+              class="instructor-name hidden"
+              data-show-when-has-content="%instructor3_link|in_quotes%"
+            >
+              <a target="_blank" href="%instructor3_link|in_quotes%"
+                >%instructor3_name%</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts/likely.js"></script>
+    <script src="scripts/clipboard.min.js"></script>
+    <script src="scripts/tlite.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
